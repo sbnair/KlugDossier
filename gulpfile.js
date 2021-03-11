@@ -7,6 +7,8 @@ var gulp         = require('gulp'),
 		pug         = require('gulp-pug'),
 		concat       = require('gulp-concat'),
 		uglify       = require('gulp-uglifyjs');
+                gutil        = require('gulp-util');
+                logger       =  require('gulplog'); 
 
 gulp.task('browser-sync', function() {
 	browserSync.init({
