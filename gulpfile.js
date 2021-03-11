@@ -53,7 +53,7 @@ gulp.task('pug', function() {
 
 gulp.task('code', function(){
 	return gulp.src('app/*.html')
-	.pipe(browserSync.reload({stream: true}))
+	.pipe(browserSync.stream())
 })
 
 gulp.task('scripts', function() {
