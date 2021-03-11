@@ -48,7 +48,7 @@ gulp.task('code', function(){
 
 gulp.task('scripts', function() {
 	return gulp.src([
-		'app/libs/modernizr/modernizr.js',
+		'app/**/modernizr/modernizr.js',
 		'app/libs/jquery/jquery.min.js',
 		'app/libs/pace/pace.min.js',
 		'app/libs/slick/slick.min.js',
