@@ -26,7 +26,16 @@ gulp.task('styles', function () {
 		includePaths: require('node-bourbon').includePaths
 	}).on('error', sass.logError))
 	// .pipe(rename({suffix: '.min', prefix : ''}))
-	.pipe(autoprefixer({browsers: ['last 15 versions'], cascade: false}))
+	.pipe(autoprefixer({browsers: [
+        'Chrome >= 35',
+        'Firefox >= 38',
+        'Edge >= 12',
+        'Explorer >= 10',
+        'iOS >= 8',
+        'Safari >= 8',
+        'Android 2.3',
+        'Android >= 4',
+        'Opera >= 12'], cascade: false}))
 	// .pipe(minifycss())
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.stream());
