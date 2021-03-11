@@ -48,35 +48,35 @@ gulp.task('code', function(){
 
 gulp.task('scripts', function() {
 	return gulp.src([
-		'./app/libs/modernizr/modernizr.js',
-		'./app/libs/jquery/jquery.min.js',
-		'./app/libs/pace/pace.min.js',
-		'./app/libs/slick/slick.min.js',
-		'./app/libs/matchHeight/jquery.matchHeight-min.js',
-		'./app/libs/jquery.directional-hover/jquery.directional-hover.min.js',
-		'./app/libs/waypoints/waypoints.min.js',
-		'./app/libs/animnum/animnum.js',
-		'./app/libs/magnific-popup/jquery.magnific-popup.min.js',
-		'./app/libs/animate/animate-css.js',
+		'app/libs/modernizr/modernizr.js',
+		'app/libs/jquery/jquery.min.js',
+		'app/libs/pace/pace.min.js',
+		'app/libs/slick/slick.min.js',
+		'app/libs/matchHeight/jquery.matchHeight-min.js',
+		'app/libs/jquery.directional-hover/jquery.directional-hover.min.js',
+		'app/libs/waypoints/waypoints.min.js',
+		'app/libs/animnum/animnum.js',
+		'app/libs/magnific-popup/jquery.magnific-popup.min.js',
+		'app/libs/animate/animate-css.js',
 		// './app/libs/smoothscroll/smoothscroll.min.js',
-		'./app/libs/parallax/parallax.min.js',
-		'./app/libs/imagesloaded/imagesloaded.pkgd.min.js',
-		'./app/libs/isotope/isotope.pkgd.min.js',
-		'./app/libs/textillate/jquery.fittext.js',
-		'./app/libs/textillate/jquery.lettering.js',
-		'./app/libs/textillate/jquery.textillate.js',
-		'./app/libs/superfish-master/js/superfish.min.js',
-		'./app/libs/selectize/dist/js/standalone/selectize.js',
-		'./app/libs/ytp-player/jquery.mb.YTPlayer.min.js',
-		'./app/libs/jquery-ui-1.12.1.custom/jquery-ui.min.js',
-		'./app/libs/countdown/jquery.countdown.min.js',
-		'./app/libs/googlemaps/gmap3.min.js',
-		'./app/libs/canvas-bg/particles.min.js',
-		'./app/libs/canvas-bg/demo-2.js'
+		'app/libs/parallax/parallax.min.js',
+		'app/libs/imagesloaded/imagesloaded.pkgd.min.js',
+		'app/libs/isotope/isotope.pkgd.min.js',
+		'app/libs/textillate/jquery.fittext.js',
+		'app/libs/textillate/jquery.lettering.js',
+		'app/libs/textillate/jquery.textillate.js',
+		'app/libs/superfish-master/js/superfish.min.js',
+		'app/libs/selectize/dist/js/standalone/selectize.js',
+		'app/libs/ytp-player/jquery.mb.YTPlayer.min.js',
+		'app/libs/jquery-ui-1.12.1.custom/jquery-ui.min.js',
+		'app/libs/countdown/jquery.countdown.min.js',
+		'app/libs/googlemaps/gmap3.min.js',
+		'app/libs/canvas-bg/particles.min.js',
+		'app/libs/canvas-bg/demo-2.js'
 		])
 		.pipe(concat('libs.js'))
 		.pipe(uglify()) //Minify libs.js
-		.pipe(gulp.dest('./app/js/'));
+		.pipe(gulp.dest('app/js/'));
 });
 
 
