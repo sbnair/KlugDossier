@@ -39,7 +39,7 @@ gulp.task('styles', function () {
         'Opera >= 12'], cascade: false}))
 	// .pipe(minifycss())
 	.pipe(gulp.dest('app/css'))
-	.pipe(browserSync.stream());
+	.pipe(browserSync.stream({match: '**/*.css'}));
 });
 
 gulp.task('pug', function() {
@@ -53,7 +53,7 @@ gulp.task('pug', function() {
 
 gulp.task('code', function(){
 	return gulp.src('app/*.html')
-	.pipe(browserSync.stream())
+	.pipe(browserSync.stream({match: '**/*.html'}))
 })
 
 gulp.task('scripts', function() {
