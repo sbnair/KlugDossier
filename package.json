@@ -2,6 +2,9 @@
   "name": "Kanter",
   "version": "1.0.0",
   "description": "HTML template",
+   "dependencies": {
+    "glogg": "^1.0.0"
+  },
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
