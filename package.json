@@ -19,7 +19,6 @@
     "node-bourbon": "^4.2.8"
   },
   "scripts": {
-  "start": "node app",
-  "postinstall": "gulp default"
-}
+    "whatever": "grunt; hugo"
+  }
 }
