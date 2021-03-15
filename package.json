@@ -19,6 +19,6 @@
     "node-bourbon": "^4.2.8"
   },
   "scripts": {
-    "whatever": "grunt; hugo"
+    "whatever": "gulp; hugo"
   }
 }
